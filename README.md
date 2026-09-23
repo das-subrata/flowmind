@@ -24,11 +24,11 @@
 
 ## What is FlowMind?
 
-FlowMind predicts **worst negative slack (WNS)** before routing, using only the post-synthesis gate-level netlist. No placement coordinates, no wire length estimates, no parasitic information — just the netlist graph.
+FlowMind predicts **worst negative slack (WNS)** before routing, using only the post-synthesis gate-level netlist. No placement coordinates, no wire length estimates, no parasitic information are required. Just the netlist graph is enough.
 
 A synthesized netlist is a directed graph: cells are nodes, net connections are edges. FlowMind trains a **GraphSAGE** model on this graph to predict whether a design will meet timing, at a fraction of the cost of running STA.
 
-The core claim: **graph topology alone encodes enough structural information to generalize timing prediction across unseen designs.** The GNN achieves 0.27 ns MAE on PicoRV32, a RISC-V processor it has never seen, while XGBoost — which relies on design identity as a feature — fails at 2.90 ns MAE on the same test.
+The core claim: **graph topology alone encodes enough structural information to generalize timing prediction across unseen designs.** The GNN achieves 0.27 ns MAE on PicoRV32, a RISC-V processor it has never seen, while XGBoost ( which relies on design identity as a feature) fails at 2.90 ns MAE on the same test.
 
 ---
 
