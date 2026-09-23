@@ -23,3 +23,5 @@ qual_results/*.log
 .triage_index.pkl
 .chromadb/
 models/*.pkl
+results/data/lodo_results.csv
+results/data/lodo_summary.csv
