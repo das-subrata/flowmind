@@ -73,7 +73,6 @@ flowmind/
 ├── run_gnn_train.py          # Extension 5: GraphSAGE training
 ├── run_gnn_eval.py           # Extension 5: GNN vs XGBoost eval report
 ├── run_gnn_subgraph.py       # Extension 5b: BFS subgraph sampling
-├── run_gnn_lodo.py           # Extension 5c: leave-one-design-out eval
 │
 ├── configs/                  # Per-design YAML (clock, I/O delays, PDK paths)
 ├── templates/                # Jinja2 templates (Yosys, SDC, OpenSTA)
@@ -226,8 +225,6 @@ python results/scripts/fig4_ablation.py
 | `results/data/eval_results.csv` | Per-design GNN vs XGBoost MAE |
 | `results/data/ablation.csv` | 4-stage training set ablation |
 | `results/data/training_history.csv` | MSE loss per epoch (300 epochs) |
-| `results/data/lodo_results.csv` | Leave-one-design-out detail |
-| `results/data/lodo_summary.csv` | LODO summary per experiment |
 
 ---
 
